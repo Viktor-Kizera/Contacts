@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6850B4312BD028D60012DEC1 /* Constact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6850B4302BD028D60012DEC1 /* Constact.swift */; };
 		68DDC3CE2BCEA3C900CC95B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DDC3CD2BCEA3C900CC95B1 /* AppDelegate.swift */; };
 		68DDC3D02BCEA3C900CC95B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DDC3CF2BCEA3C900CC95B1 /* SceneDelegate.swift */; };
 		68DDC3D22BCEA3C900CC95B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DDC3D12BCEA3C900CC95B1 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6850B4302BD028D60012DEC1 /* Constact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constact.swift; sourceTree = "<group>"; };
 		68DDC3CA2BCEA3C900CC95B1 /* Contact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68DDC3CD2BCEA3C900CC95B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68DDC3CF2BCEA3C900CC95B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6850B42F2BD028C10012DEC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6850B4302BD028D60012DEC1 /* Constact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		68DDC3C12BCEA3C900CC95B1 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		68DDC3CC2BCEA3C900CC95B1 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
+				6850B42F2BD028C10012DEC1 /* Model */,
 				68DDC3CD2BCEA3C900CC95B1 /* AppDelegate.swift */,
 				68DDC3CF2BCEA3C900CC95B1 /* SceneDelegate.swift */,
 				68DDC3D12BCEA3C900CC95B1 /* ViewController.swift */,
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6850B4312BD028D60012DEC1 /* Constact.swift in Sources */,
 				68DDC3D22BCEA3C900CC95B1 /* ViewController.swift in Sources */,
 				68DDC3CE2BCEA3C900CC95B1 /* AppDelegate.swift in Sources */,
 				68DDC3D02BCEA3C900CC95B1 /* SceneDelegate.swift in Sources */,
