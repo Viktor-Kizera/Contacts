@@ -10,13 +10,20 @@ import UIKit
 class ViewController: UIViewController {
     private var constacts: [ConstactProtocol] = [] {
         didSet {
-            constacts.sort{ $0.title < $1.title }
+            constacts.sort{ $0.title < $1.title}
+            storage.save(contacts: constacts)
         }
     }
+    var storage: ContactStorageProtocol!
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+       // userDefaults.set(self, forKey: "View Controller current state")
+//        print(userDefaults.object(forKey: "Some key"))
+//        print(userDefaults.string(forKey: "Some key"))
+        storage = ContactsStorage()
         loadContacts()
     }
     @IBAction func showNewContactAlert() {
@@ -41,13 +48,14 @@ class ViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
 
-    func loadContacts() -> Void {
-        constacts.append(
-            Constact(title: "Олександр Довбняк", phone: "+380934756343"))
-        constacts.append(
-            Constact(title: "Інна Кізера", phone: "+380975665474"))
-        constacts.append(
-            Constact(title: "Христина Крижанівська", phone: "+380632345622"))
+   private func loadContacts() -> Void {
+//        constacts.append(
+//            Constact(title: "Олександр Довбняк", phone: "+380934756343"))
+//        constacts.append(
+//            Constact(title: "Інна Кізера", phone: "+380975665474"))
+//        constacts.append(
+//            Constact(title: "Христина Крижанівська", phone: "+380632345622"))
+      constacts = storage.load()
     }
 }
 extension ViewController: UITableViewDataSource {
